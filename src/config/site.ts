@@ -13,9 +13,10 @@ export const siteConfig = {
   name: 'Chamath Weerathunga',
   wordmark: 'Chamath W.',
   headline: 'AI Undergraduate | Machine Learning & Full-Stack Development',
-  badge: 'AI Undergraduate',
+  badge: 'AI UNDERGRADUATE · SLIIT',
+  eyebrow: 'CHAMATH WEERATHUNGA · AI & MACHINE LEARNING',
   heroIntroduction:
-    'IT undergraduate at SLIIT specialising in Artificial Intelligence, with a focus on machine learning, deep learning, and building practical full-stack software applications and data-driven systems.',
+    'IT undergraduate at SLIIT specialising in Artificial Intelligence, building practical machine learning applications, full-stack software platforms, RESTful backend services, and automated IoT systems with clean architecture.',
   location: 'Kandy, Sri Lanka',
   githubUrl: 'https://github.com/chamath32',
   linkedinUrl: 'https://www.linkedin.com/in/chamath-weerathunga',
@@ -30,6 +31,15 @@ export const siteConfig = {
    */
   cvUrl: '',
   profileImage: '/images/profile/Chamath Weerathunga.png',
+  coreFocusAreas: [
+    'Artificial Intelligence',
+    'Machine Learning',
+    'Deep Learning',
+    'Full-Stack Development',
+    'Backend & REST APIs',
+    'Database Systems',
+    'IoT Automation',
+  ],
   stats: [
     {
       value: '6',
@@ -49,8 +59,8 @@ export const siteConfig = {
   ] as StatItem[],
   navItems: [
     { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
     { label: 'Projects', href: '#projects' },
+    { label: 'About', href: '#about' },
     { label: 'Expertise', href: '#expertise' },
     { label: 'Experience', href: '#experience' },
     { label: 'Contact', href: '#contact' },

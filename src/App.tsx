@@ -29,7 +29,7 @@ export function App() {
           }
         })
       },
-      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.06, rootMargin: '0px 0px -30px 0px' }
     )
 
     revealElements.forEach((el) => observer.observe(el))
@@ -37,22 +37,20 @@ export function App() {
   }, [])
 
   return (
-    <>
-      <div className="bg-glow" aria-hidden="true" />
-      <div className="bg-glow-2" aria-hidden="true" />
-      <div className="noise" aria-hidden="true" />
-
+    <div className="site-shell">
       <Navbar />
 
-      <main className="container">
+      <main>
         <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <ExpertiseSection />
-        <ExperienceSection />
-        <FooterSection />
+        <div className="container">
+          <ProjectsSection />
+          <AboutSection />
+          <ExpertiseSection />
+          <ExperienceSection />
+          <FooterSection />
+        </div>
       </main>
-    </>
+    </div>
   )
 }
 

@@ -3,7 +3,15 @@ import { skillCategories } from '../data/skills'
 export function ExpertiseSection() {
   return (
     <section id="expertise" className="section-block reveal">
-      <h2 className="section-label">Expertise & Skills</h2>
+      <div className="section-heading-block">
+        <span className="section-index-eyebrow">03 / TECHNICAL STACK</span>
+        <h2 className="section-main-title">Expertise & Core Skills</h2>
+        <p className="section-subtitle">
+          Technologies, frameworks, and tools actively used across academic
+          coursework, full-stack software development, and embedded IoT builds.
+        </p>
+      </div>
+
       <div className="skills-section">
         {skillCategories.map((group) => (
           <div key={group.id} className="skill-group">

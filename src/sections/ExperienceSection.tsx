@@ -3,7 +3,15 @@ import { experiences, education } from '../data/experience'
 export function ExperienceSection() {
   return (
     <section id="experience" className="section-block reveal">
-      <h2 className="section-label">Experience, Activities & Education</h2>
+      <div className="section-heading-block">
+        <span className="section-index-eyebrow">04 / BACKGROUND & LEADERSHIP</span>
+        <h2 className="section-main-title">Experience, Activities & Education</h2>
+        <p className="section-subtitle">
+          Practical industry involvement, university community leadership, and
+          academic degree progress.
+        </p>
+      </div>
+
       <div className="experience-grid">
         <div className="timeline-column">
           <div className="column-subtitle">Experience & University Activities</div>
@@ -29,9 +37,7 @@ export function ExperienceSection() {
               <span className="exp-tag">{edu.status}</span>
               <h3>{edu.degree}</h3>
               <div className="exp-org">{edu.specialisation}</div>
-              <p className="exp-summary" style={{ fontWeight: 500, color: '#ffffff' }}>
-                {edu.institution}
-              </p>
+              <p className="exp-institution">{edu.institution}</p>
               <p className="exp-summary" style={{ marginBottom: 0 }}>
                 {edu.summary}
               </p>
