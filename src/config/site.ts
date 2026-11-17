@@ -26,10 +26,9 @@ export const siteConfig = {
    */
   email: '',
   /**
-   * Optional CV download path: leave empty ('') unless an actual CV PDF is placed in public/.
-   * Example when available: '/Chamath_Weerathunga_CV.pdf'
+   * CV download path pointing to static file in public/
    */
-  cvUrl: '',
+  cvUrl: '/Chamath_Weerathunga_Resume.pdf',
   profileImage: '/images/profile/Chamath Weerathunga.png',
   coreFocusAreas: [
     'Artificial Intelligence',

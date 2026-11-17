@@ -31,15 +31,21 @@ export function HeroSection() {
                 Explore My Work <span aria-hidden="true">→</span>
               </a>
 
-              <a href="#contact" className="btn-ghost-teal">
-                Get in Touch <span aria-hidden="true">→</span>
-              </a>
-
               {cvHref && (
-                <a href={cvHref} download className="btn-ghost-teal">
+                <a
+                  href={cvHref}
+                  download="Chamath_Weerathunga_Resume.pdf"
+                  className="btn-ghost-teal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download CV <span aria-hidden="true">↓</span>
                 </a>
               )}
+
+              <a href="#contact" className="btn-ghost-teal">
+                Get in Touch <span aria-hidden="true">→</span>
+              </a>
             </div>
 
             {/* Direct Channels List (Matching Screenshot Bottom-Left) */}
